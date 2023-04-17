@@ -1,5 +1,12 @@
 You can find these instructions on the [official web page](http://koromix.dev/tytools).
 
+# Skygauge Instruction
+Run the `build.sh` script. This will build the command line tools in `build/linux`
+Type `tycmd help` to get a list of commands for this utility.
+To upload type `tycmd upload [filename.hex]`. This will upload even if the
+teensy has never been programmed, meaning it's showing up as
+`16c0:0486 Van Ooijen Technische Informatica Teensyduino RawHID`
+
 # Overview
 
 TyTools is a collection of **independent tools** and you only need one executable to use
