@@ -73,7 +73,7 @@ list(APPEND LIBTY_LINK_LIBRARIES ${CMAKE_THREAD_LIBS_INIT})
 
 add_library(libty STATIC ${LIBTY_SOURCES})
 set_target_properties(libty PROPERTIES OUTPUT_NAME ty)
-target_link_libraries(libty PRIVATE ${LIBTY_LINK_LIBRARIES})
+target_link_libraries(libty PRIVATE ${LIBTY_LINK_LIBRARIES} pthread)
 # We need that for config.h
 target_include_directories(libty PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
 target_compile_definitions(libty PUBLIC _TY_HAVE_CONFIG_H)
